@@ -10,7 +10,9 @@
     "lint": "biome lint --write",
     "format": "biome format --write",
     "check": "biome check --write",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "machine-translate": "inlang machine translate --project project.inlang",
+    "compile": "paraglide-js compile --project ./src/i18n/project.inlang --outdir ./src/i18n/paraglide"
   },
   "dependencies": {
     "@base-ui/react": "^1.3.0",
@@ -33,6 +35,8 @@
   },
   "devDependencies": {
     "@biomejs/biome": "^2.4.11",
+    "@inlang/cli": "^3.0.0",
+    "@inlang/paraglide-js": "^2.15.3",
     "@types/node": "^22.19.15",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
