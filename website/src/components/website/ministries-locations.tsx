@@ -1,4 +1,4 @@
-export function Locations() {
+export function MinistriesLocations() {
   return (
     <section className="bg-black text-white py-20 px-8 border-t border-zinc-800">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
@@ -25,9 +25,7 @@ export function Locations() {
             </div>
             <div>
               <h3 className="text-xl font-bold mb-2">{loc.city}</h3>
-              <p className="text-zinc-400 text-sm mb-4 leading-relaxed">
-                {loc.addr}
-              </p>
+              <p className="text-zinc-400 text-sm mb-4 leading-relaxed">{loc.addr}</p>
               <div className="flex items-center gap-2 text-sm font-medium">
                 <span>📞</span> {loc.phone}
               </div>

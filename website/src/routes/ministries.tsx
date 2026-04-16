@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Footer } from "src/components/website/footer";
 import { MinistriesGrid } from "src/components/website/ministries-grid";
 import { MinistriesHero } from "src/components/website/ministries-hero";
-import { Locations } from "src/components/website/ministries-locations";
+import { MinistriesLocations } from "src/components/website/ministries-locations";
 import { Navbar } from "src/components/website/navbar";
 
 export const Route = createFileRoute("/ministries")({
@@ -17,7 +17,7 @@ function RouteComponent() {
         <MinistriesHero />
         <MinistriesGrid />
       </main>
-      <Locations />
+      <MinistriesLocations />
       <Footer />
     </div>
   );
