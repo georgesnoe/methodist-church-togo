@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Footer } from "@/components/website/footer";
 import { Navbar } from "@/components/website/navbar";
 import { NotFoundHero } from "@/components/website/not-found-hero";
-import { LocationsFooter } from "@/components/website/not-found-locations-footer";
+import { NotFoundLocationsFooter } from "@/components/website/not-found-locations-footer";
 
 export const Route = createFileRoute("/not-found")({
   component: RouteComponent,
@@ -15,7 +15,7 @@ function RouteComponent() {
       <main>
         <NotFoundHero />
       </main>
-      <LocationsFooter />
+      <NotFoundLocationsFooter />
       <Footer />
     </div>
   );
