@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useRef } from "react";
-import { Locations } from "@/components/website/event-locations";
+import { EventLocations } from "@/components/website/event-locations";
 import { EventMonth } from "@/components/website/event-month";
 import { EventsHero } from "@/components/website/events-hero";
 import { Footer } from "@/components/website/footer";
@@ -77,14 +77,10 @@ function RouteComponent() {
       <main>
         <EventsHero />
         {eventData.current.map((group) => (
-          <EventMonth
-            key={group.month}
-            month={group.month}
-            events={group.events}
-          />
+          <EventMonth key={group.month} month={group.month} events={group.events} />
         ))}
       </main>
-      <Locations />
+      <EventLocations />
       <Footer />
     </div>
   );
