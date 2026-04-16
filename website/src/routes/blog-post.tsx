@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { ArticleContent } from "@/components/website/article-content";
 import { BlogPostHero } from "@/components/website/blog-post-hero";
-import { LocationsFooter } from "@/components/website/blog-post-locations-footer";
+import { BlogPostLocationsFooter } from "@/components/website/blog-post-locations-footer";
 import { Footer } from "@/components/website/footer";
 import { LatestPosts } from "@/components/website/latest-posts";
 import { Navbar } from "@/components/website/navbar";
@@ -19,7 +19,7 @@ function RouteComponent() {
         <ArticleContent />
         <LatestPosts />
       </main>
-      <LocationsFooter />
+      <BlogPostLocationsFooter />
       <Footer />
     </div>
   );
