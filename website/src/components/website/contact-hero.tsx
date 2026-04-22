@@ -1,4 +1,6 @@
 import { Button } from "./button";
+import { IconMail, IconPhone } from "@tabler/icons-react";
+
 
 export function ContactHero() {
   return (
@@ -18,7 +20,7 @@ export function ContactHero() {
         <div className="space-y-8">
           <div className="flex items-start gap-4">
             <div className="w-12 h-12 bg-accent-gold rounded-full flex items-center justify-center text-white text-xl">
-              ✉️
+              <IconMail size={24} />
             </div>
             <div>
               <p className="text-zinc-500 text-sm mb-1">Send us an email</p>
@@ -27,7 +29,7 @@ export function ContactHero() {
           </div>
           <div className="flex items-start gap-4">
             <div className="w-12 h-12 bg-accent-gold rounded-full flex items-center justify-center text-white text-xl">
-              📞
+              <IconPhone size={24} />
             </div>
             <div>
               <p className="text-zinc-500 text-sm mb-1">Give us a call</p>

@@ -1,3 +1,5 @@
+import { IconCalendar, IconPlayerPlay } from "@tabler/icons-react";
+
 import { Button } from "./button";
 
 export function Sermons() {
@@ -19,13 +21,13 @@ export function Sermons() {
             />
             <div className="absolute inset-0 bg-linear-to-t from-black/80 via-transparent to-transparent p-10 flex flex-col justify-end text-left">
               <div className="flex items-center gap-2 text-sm mb-4 opacity-80">
-                <span>📅 OCT 24, 2023</span>
+                <span><IconCalendar size={16} /> OCT 24, 2023</span>
               </div>
               <h3 className="text-4xl font-bold mb-6">
                 Family primary Group reunion
               </h3>
               <div className="w-16 h-16 bg-white text-black rounded-full flex items-center justify-center text-2xl hover:scale-110 transition-transform">
-                ▶
+                <IconPlayerPlay size={24} />
               </div>
             </div>
           </div>
@@ -42,7 +44,7 @@ export function Sermons() {
                 />
                 <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
                   <div className="w-10 h-10 bg-white/20 backdrop-blur-sm text-white rounded-full flex items-center justify-center text-sm">
-                    ▶
+                    <IconPlayerPlay size={16} />
                   </div>
                 </div>
               </div>

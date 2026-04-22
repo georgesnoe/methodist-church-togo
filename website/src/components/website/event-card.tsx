@@ -1,3 +1,5 @@
+import { IconCalendar, IconClock } from "@tabler/icons-react";
+
 export function EventCard({ event }: { event: any }) {
   return (
     <div className="group cursor-pointer">
@@ -9,9 +11,9 @@ export function EventCard({ event }: { event: any }) {
         />
       </div>
       <div className="flex items-center gap-4 text-sm font-bold text-zinc-500 mb-4">
-        <span className="flex items-center gap-1">📅 {event.date}</span>
+        <span className="flex items-center gap-1"><IconCalendar size={16} /> {event.date}</span>
         <span>—</span>
-        <span className="flex items-center gap-1">🕒 {event.time}</span>
+        <span className="flex items-center gap-1"><IconClock size={16} /> {event.time}</span>
       </div>
       <h3 className="text-2xl font-bold mb-3 group-hover:text-zinc-700 transition-colors">
         {event.title}

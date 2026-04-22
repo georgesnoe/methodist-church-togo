@@ -1,4 +1,6 @@
 import { useRef, useState } from "react";
+import { IconPlus, IconX } from "@tabler/icons-react";
+
 
 export function FAQSection() {
   const [openIndex, setOpenIndex] = useState(0);
@@ -42,7 +44,7 @@ export function FAQSection() {
               <span className="text-xl md:text-2xl font-bold group-hover:text-zinc-600 transition-colors">
                 {faq.q}
               </span>
-              <span className="text-2xl">{openIndex === i ? "✕" : "＋"}</span>
+              <span className="text-2xl">{openIndex === i ? <IconX size={24} /> : <IconPlus size={24} />}</span>
             </button>
             {openIndex === i && (
               <div className="pb-8 animate-in fade-in slide-in-from-top-2 duration-300">

@@ -1,14 +1,16 @@
+import { IconCalendar, IconClock, IconMapPin } from "@tabler/icons-react";
+
 export function InfoBar() {
   return (
     <section className="py-12 px-8 border-b border-zinc-100 bg-white">
       <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8">
         {[
-          { label: "Minister day", value: "FRIDAY", icon: "📅" },
-          { label: "Minister Hour", value: "7:00 PM", icon: "🕒" },
+          { label: "Minister day", value: "FRIDAY", icon: <IconCalendar size={20} /> },
+          { label: "Minister Hour", value: "7:00 PM", icon: <IconClock size={20} /> },
           {
             label: "Minister Location",
             value: "1000 S WESTGATE AVE LOS ANGELES, 90049",
-            icon: "📍",
+            icon: <IconMapPin size={20} />,
           },
           {
             label: "Minister leader",

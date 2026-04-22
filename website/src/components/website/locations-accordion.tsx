@@ -1,3 +1,5 @@
+import { IconMail, IconPhone, IconPlus, IconX } from "@tabler/icons-react";
+
 import { useRef, useState } from "react";
 
 export function LocationsAccordion() {
@@ -51,14 +53,14 @@ export function LocationsAccordion() {
                   <span className="text-2xl md:text-3xl font-bold group-hover:text-accent-gold transition-colors">
                     {loc.city}
                   </span>
-                  <span className="text-2xl">{active === i ? "✕" : "˄"}</span>
+                  <span className="text-2xl">{active === i ? <IconX size={24} /> : <IconPlus size={24} />}</span>
                 </button>
                 {active === i && (
                   <div className="pb-8 space-y-6 animate-in fade-in slide-in-from-top-2 duration-300">
                     <p className="text-zinc-400 leading-relaxed">{loc.desc}</p>
                     <div className="flex items-start gap-4">
                       <div className="w-10 h-10 bg-accent-gold rounded-full flex items-center justify-center text-white">
-                        ✉️
+                        <IconMail size={20} />
                       </div>
                       <div>
                         <p className="text-zinc-500 text-xs uppercase font-bold">
@@ -69,7 +71,7 @@ export function LocationsAccordion() {
                     </div>
                     <div className="flex items-start gap-4">
                       <div className="w-10 h-10 bg-accent-gold rounded-full flex items-center justify-center text-white">
-                        📞
+                        <IconPhone size={20} />
                       </div>
                       <div>
                         <p className="text-zinc-500 text-xs uppercase font-bold">

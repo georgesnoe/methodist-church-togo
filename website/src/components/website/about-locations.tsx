@@ -1,3 +1,5 @@
+import { IconArrowLeft, IconArrowRight } from "@tabler/icons-react";
+
 export function AboutLocations() {
   return (
     <section className="bg-black text-white py-32 px-8">
@@ -47,13 +49,13 @@ export function AboutLocations() {
                 type="button"
                 className="w-12 h-12 rounded-full bg-white text-black flex items-center justify-center hover:bg-zinc-200 transition-colors"
               >
-                ←
+                <IconArrowLeft size={24} />
               </button>
               <button
                 type="button"
                 className="w-12 h-12 rounded-full bg-white text-black flex items-center justify-center hover:bg-zinc-200 transition-colors"
               >
-                →
+                <IconArrowRight size={24} />
               </button>
             </div>
           </div>

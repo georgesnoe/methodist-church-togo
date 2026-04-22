@@ -1,10 +1,12 @@
+import { IconCross } from "@tabler/icons-react";
+
 export function Footer() {
   return (
     <footer className="bg-black text-white pt-20 pb-10 px-8">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 mb-20">
         <div>
           <div className="flex items-center gap-2 font-bold text-2xl mb-6">
-            <span>†</span> Worship
+            <span><IconCross size={24} /></span> Worship
           </div>
           <p className="text-zinc-400 text-sm leading-relaxed mb-8 max-w-sm">
             Enim ullamcorper lobortis erat nec blandit sagittis consequat id

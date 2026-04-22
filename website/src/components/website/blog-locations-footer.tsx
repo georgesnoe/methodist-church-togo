@@ -1,3 +1,5 @@
+import { IconMapPin, IconPhone } from "@tabler/icons-react";
+
 export function BlogLocationsFooter() {
   return (
     <section className="bg-black text-white py-20 px-8 border-t border-zinc-800">
@@ -21,13 +23,13 @@ export function BlogLocationsFooter() {
         ].map((loc) => (
           <div key={loc.city} className="flex gap-4">
             <div className="w-12 h-12 bg-accent-gold rounded-full flex-shrink-0 flex items-center justify-center text-white">
-              📍
+              <IconMapPin size={24} />
             </div>
             <div>
               <h3 className="text-xl font-bold mb-2">{loc.city}</h3>
               <p className="text-zinc-400 text-sm mb-4 leading-relaxed">{loc.addr}</p>
               <div className="flex items-center gap-2 text-sm font-medium">
-                <span>📞</span> {loc.phone}
+                <IconPhone size={16} /> {loc.phone}
               </div>
             </div>
           </div>

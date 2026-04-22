@@ -1,4 +1,6 @@
 import { Button } from "./button";
+import { IconCalendar, IconClock } from "@tabler/icons-react";
+
 
 export function EventsHero() {
   return (
@@ -25,9 +27,9 @@ export function EventsHero() {
         />
         <div className="absolute bottom-10 left-10 max-w-md bg-white text-black p-10 rounded-3xl shadow-2xl z-20">
           <div className="flex items-center gap-4 text-sm font-bold text-zinc-500 mb-4">
-            <span className="flex items-center gap-1">📅 MAR 13, 2025</span>
+            <span className="flex items-center gap-1"><IconCalendar size={16} /> MAR 13, 2025</span>
             <span>—</span>
-            <span className="flex items-center gap-1">🕒 10:00 PM</span>
+            <span className="flex items-center gap-1"><IconClock size={16} /> 10:00 PM</span>
           </div>
           <h3 className="text-3xl font-bold mb-4">Womans Breakfast</h3>
           <p className="text-zinc-600 mb-8 leading-relaxed">

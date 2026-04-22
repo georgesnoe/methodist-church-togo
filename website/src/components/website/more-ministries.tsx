@@ -1,4 +1,6 @@
 import { Button } from "./button";
+import { IconCalendar, IconClock } from "@tabler/icons-react";
+
 
 export function MoreMinistries() {
   return (
@@ -35,9 +37,9 @@ export function MoreMinistries() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent p-10 flex flex-col justify-end text-white">
                 <h3 className="text-3xl font-bold mb-4">{m.title}</h3>
                 <div className="flex items-center gap-4 text-sm font-medium opacity-90">
-                  <span className="flex items-center gap-1">📅 {m.day}</span>
+                  <span className="flex items-center gap-1"><IconCalendar size={16} /> {m.day}</span>
                   <span>—</span>
-                  <span className="flex items-center gap-1">🕒 {m.time}</span>
+                  <span className="flex items-center gap-1"><IconClock size={16} /> {m.time}</span>
                 </div>
               </div>
             </div>

@@ -1,3 +1,5 @@
+import { IconArrowLeft, IconArrowRight, IconCalendar, IconClock } from "@tabler/icons-react";
+
 import { Button } from "./button";
 import { SectionHeading } from "./section-heading";
 
@@ -14,13 +16,13 @@ export function Ministries() {
             type="button"
             className="w-12 h-12 rounded-full bg-black text-white flex items-center justify-center hover:bg-zinc-800 transition-colors"
           >
-            ←
+            <IconArrowLeft size={24} />
           </button>
           <button
             type="button"
             className="w-12 h-12 rounded-full bg-black text-white flex items-center justify-center hover:bg-zinc-800 transition-colors"
           >
-            →
+            <IconArrowRight size={24} />
           </button>
         </div>
       </div>
@@ -52,11 +54,11 @@ export function Ministries() {
               <h3 className="text-3xl font-bold mb-4">{ministry.title}</h3>
               <div className="flex items-center gap-4 text-sm opacity-90">
                 <span className="flex items-center gap-1">
-                  📅 {ministry.day}
+                  <IconCalendar size={16} /> {ministry.day}
                 </span>
                 <span>—</span>
                 <span className="flex items-center gap-1">
-                  🕒 {ministry.time}
+                  <IconClock size={16} /> {ministry.time}
                 </span>
               </div>
             </div>

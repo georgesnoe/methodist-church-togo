@@ -1,3 +1,5 @@
+import { IconCalendar, IconClock } from "@tabler/icons-react";
+
 export function MinistryCard({
   ministry,
   className = "",
@@ -19,9 +21,9 @@ export function MinistryCard({
           {ministry.title}
         </h3>
         <div className="flex items-center gap-4 text-sm font-medium opacity-90">
-          <span className="flex items-center gap-1">📅 {ministry.day}</span>
+          <span className="flex items-center gap-1"><IconCalendar size={16} /> {ministry.day}</span>
           <span>—</span>
-          <span className="flex items-center gap-1">🕒 {ministry.time}</span>
+          <span className="flex items-center gap-1"><IconClock size={16} /> {ministry.time}</span>
         </div>
       </div>
     </div>

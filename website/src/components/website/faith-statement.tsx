@@ -1,4 +1,6 @@
 import { SectionHeading } from "./section-heading";
+import { IconArrowLeft, IconArrowRight, IconBook, IconCross } from "@tabler/icons-react";
+
 
 export function FaithStatement() {
   return (
@@ -13,13 +15,13 @@ export function FaithStatement() {
             type="button"
             className="w-12 h-12 rounded-full bg-black text-white flex items-center justify-center hover:bg-zinc-800 transition-colors"
           >
-            ←
+            <IconArrowLeft size={24} />
           </button>
           <button
             type="button"
             className="w-12 h-12 rounded-full bg-black text-white flex items-center justify-center hover:bg-zinc-800 transition-colors"
           >
-            →
+            <IconArrowRight size={24} />
           </button>
         </div>
       </div>
@@ -27,13 +29,13 @@ export function FaithStatement() {
         {[
           {
             title: "The Holy Bible",
-            icon: "📖",
+            icon: <IconBook size={24} />,
             text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip.",
             ref: "John 3:16 | Thessalonians 2:13",
           },
           {
             title: "The Saviour",
-            icon: "†",
+            icon: <IconCross size={24} />,
             text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip.",
             ref: "John 3:16 | Thessalonians 2:13",
           },
