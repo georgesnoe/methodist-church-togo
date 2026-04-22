@@ -1,6 +1,6 @@
 import { createRootRoute, HeadContent, Scripts } from "@tanstack/react-router";
 import { useRef } from "react";
-import { getLocale } from "src/i18n/paraglide/runtime";
+import { getLocale } from "@/i18n/paraglide/runtime";
 import styles from "@/styles.css?url";
 
 export const Route = createRootRoute({
