@@ -2,25 +2,26 @@ import { IconArrowLeft, IconArrowRight, IconCalendar, IconClock } from "@tabler/
 
 import { Button } from "./button";
 import { SectionHeading } from "./section-heading";
+import { Link } from "@tanstack/react-router";
 
 export function Ministries() {
   return (
     <section className="py-32 px-8 max-w-7xl mx-auto">
       <div className="flex justify-between items-end mb-12">
         <SectionHeading
-          overline="Our ministries"
-          title="We have the perfect ministry for you"
+          overline="Nos ministères"
+          title="Un ministère adapté à chacun pour servir le Seigneur"
         />
         <div className="flex gap-3 mb-12">
           <button
-            type="button"
-            className="w-12 h-12 rounded-full bg-black text-white flex items-center justify-center hover:bg-zinc-800 transition-colors"
+            type=\"button\"
+            className=\"w-12 h-12 rounded-full bg-black text-white flex items-center justify-center hover:bg-zinc-800 transition-colors\"
           >
             <IconArrowLeft size={24} />
           </button>
           <button
-            type="button"
-            className="w-12 h-12 rounded-full bg-black text-white flex items-center justify-center hover:bg-zinc-800 transition-colors"
+            type=\"button\"
+            className=\"w-12 h-12 rounded-full bg-black text-white flex items-center justify-center hover:bg-zinc-800 transition-colors\"
           >
             <IconArrowRight size={24} />
           </button>
@@ -29,19 +30,20 @@ export function Ministries() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
         {[
           {
-            title: "Young Kids Group Reunion",
-            day: "SUNDAY",
-            time: "4:00 PM",
+            title: "Ministère des Enfants",
+            day: "DIMANCHE",
+            time: "16:00",
             img: "https://images.unsplash.com/photo-1472162072942-f474f3771c70?auto=format&fit=crop&q=80&w=800",
           },
           {
-            title: "Youth Group Reunion",
-            day: "FRIDAY",
-            time: "7:00 PM",
+            title: "Ministère de la Jeunesse",
+            day: "VENDREDI",
+            time: "19:00",
             img: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=800",
           },
         ].map((ministry) => (
-          <div
+          <Link 
+            to={ministry.title === "Ministère de la Jeunesse" ? "/youth-group" : "/ministries"}
             key={ministry.title}
             className="group relative h-100 rounded-[2rem] overflow-hidden cursor-pointer"
           >
@@ -62,12 +64,16 @@ export function Ministries() {
                 </span>
               </div>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
       <div className="flex items-center justify-center gap-4">
-        <Button>Get involved</Button>
-        <Button variant="secondary">Browse all ministers</Button>
+        <Link to="/contact">
+          <Button>Nous rejoindre</Button>
+        </Link>
+        <Link to="/about">
+          <Button variant="secondary">Découvrir nos responsables</Button>
+        </Link>
       </div>
     </section>
   );

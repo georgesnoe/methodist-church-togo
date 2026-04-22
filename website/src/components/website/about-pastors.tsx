@@ -4,19 +4,19 @@ export function AboutPastors() {
   return (
     <section className="py-32 px-8 max-w-7xl mx-auto text-center">
       <SectionHeading
-        overline="Our Pastors"
-        title="Meet John & Sophie, our beloved pastors"
-        description="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae quae ab illo."
+        overline="Nos Pasteurs"
+        title="Rencontrez nos guides spirituels"
+        description="Dévoués au service de Dieu et de Son peuple, nos pasteurs nous accompagnent avec sagesse et amour dans notre foi quotidienne."
         center
       />
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-16">
         {[
           {
-            name: "John Carter",
+            name: "Révérend Koffi",
             img: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=800",
           },
           {
-            name: "Sophie Moore",
+            name: "Pasteure Amé",
             img: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=800",
           },
         ].map((pastor) => (

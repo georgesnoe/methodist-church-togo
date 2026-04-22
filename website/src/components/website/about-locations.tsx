@@ -7,41 +7,39 @@ export function AboutLocations() {
         <div>
           <div className="text-left mb-16">
             <p className="text-accent-gold font-medium italic text-xl mb-4">
-              Our locations
+              Nos localisations
             </p>
             <h2 className="text-4xl md:text-6xl font-bold mb-8">
-              Come visit us !
+              Venez nous rendre visite !
             </h2>
             <p className="text-zinc-400 text-lg leading-relaxed">
-              Lorem ipsum dolor sit amet consectetur adipiscing elit tortor eu
-              dolorol egestas morbi sem vulputate etiam facilisis pellentesque
-              ut quis.
+              Nous sommes présents dans plusieurs régions du Togo pour vous accueillir 
+              et partager ensemble la joie de l'Évangile. Nos portes sont toujours 
+              ouvertes pour tous.
             </p>
           </div>
           <div className="space-y-8 text-left">
             <div>
-              <p className="text-zinc-500 text-sm mb-1">Phone</p>
-              <p className="text-xl font-bold">(310) 747-1374</p>
+              <p className="text-zinc-500 text-sm mb-1">Téléphone</p>
+              <p className="text-xl font-bold">+228 22 20 00 00</p>
             </div>
             <div>
-              <p className="text-zinc-500 text-sm mb-1">Address</p>
+              <p className="text-zinc-500 text-sm mb-1">Adresse</p>
               <p className="text-xl font-bold leading-tight">
-                1000 S Westgate Ave
-                <br />
-                Los Angeles 90049
+                Avenue de la Foi\n                <br />\n                Lomé, Togo
               </p>
             </div>
             <div>
-              <p className="text-zinc-500 text-sm mb-1">Mail</p>
-              <p className="text-xl font-bold">losangeles@worshipx.com</p>
+              <p className="text-zinc-500 text-sm mb-1">Email</p>
+              <p className="text-xl font-bold">contact@emtogo.org</p>
             </div>
             <div>
-              <p className="text-zinc-500 text-sm mb-1">Our schedule</p>
+              <p className="text-zinc-500 text-sm mb-1">Nos horaires</p>
               <p className="text-xl font-bold">
-                Mon - Fri | 07:00 AM - 08:00 PM
+                Lun - Ven | 07:00 - 19:00
               </p>
               <p className="text-xl font-bold">
-                Sat - Sun | 08:00 AM - 06:00 PM
+                Sam - Dim | 08:00 - 18:00
               </p>
             </div>
             <div className="flex gap-3">
@@ -63,13 +61,13 @@ export function AboutLocations() {
         <div className="relative h-[600px] rounded-[3rem] overflow-hidden group">
           <img
             src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?auto=format&fit=crop&q=80&w=1200"
-            alt="Los Angeles"
+            alt="Lomé"
             className="w-full h-full object-cover grayscale"
           />
           <div className="absolute bottom-10 left-10 right-10">
             <div className="flex items-center gap-4">
               <div className="h-px bg-white flex-1"></div>
-              <h3 className="text-4xl font-bold">Los Angeles, CA</h3>
+              <h3 className="text-4xl font-bold">Lomé, Togo</h3>
               <div className="h-px bg-white flex-1"></div>
             </div>
           </div>

@@ -6,20 +6,20 @@ export function FAQSection() {
   const [openIndex, setOpenIndex] = useState(0);
   const faqs = useRef([
     {
-      q: "How to get involved with Worship?",
-      a: "Lorem ipsum dolor sit amet, consectetur adipiscing elit id venenatis pretium risus euismod dictum egestas orci nexus et egestas ut sagittis tincidunt phasellus elit etiam cursus orci in. Id sed montes.",
+      q: "Comment s'impliquer dans l'Église Méthodiste du Togo ?",
+      a: "C'est très simple ! Vous pouvez nous rendre visite lors de nos cultes dominicaux, participer à l'un de nos ministères ou nous contacter via le formulaire sur notre page Contact pour savoir comment contribuer.",
     },
     {
-      q: "What are the requirements to be a Church leader?",
-      a: "Lorem ipsum dolor sit amet, consectetur adipiscing elit id venenatis pretium risus euismod dictum egestas orci nexus et egestas ut sagittis tincidunt phasellus elit etiam cursus orci in. Id sed montes.",
+      q: "Quelles sont les conditions pour devenir un leader dans l'Église ?",
+      a: "L'engagement dans le leadership nécessite une foi solide en Jésus-Christ, un cœur pour le service et une formation appropriée. Nous encourageons tout membre désireux à en discuter avec son pasteur local.",
     },
     {
-      q: "What is the Church schedule?",
-      a: "Lorem ipsum dolor sit amet, consectetur adipiscing elit id venenatis pretium risus euismod dictum egestas orci nexus et egestas ut sagittis tincidunt phasellus elit etiam cursus orci in. Id sed montes.",
+      q: "Quel est le programme de l'Église ?",
+      a: "Nos cultes principaux ont lieu tous les dimanches. Nous avons également des réunions de prière en semaine et des activités spécifiques pour la jeunesse le vendredi soir. Consultez notre page Événements pour plus de détails.",
     },
     {
-      q: "I have a prayer petition, can you please help me?",
-      a: "Lorem ipsum dolor sit amet, consectetur adipiscing elit id venenatis pretium risus euismod dictum egestas orci nexus et egestas ut sagittis tincidunt phasellus elit etiam cursus orci in. Id sed montes.",
+      q: "J'ai une demande de prière, pouvez-vous m'aider ?",
+      a: "Bien sûr. Nous croyons fermement au pouvoir de la prière. Vous pouvez nous envoyer votre demande par email ou nous en parler directement lors de vos visites à l'église.",
     },
   ]);
 
@@ -27,10 +27,10 @@ export function FAQSection() {
     <section className="py-32 px-8 max-w-4xl mx-auto">
       <div className="text-center mb-20">
         <p className="text-accent-gold font-medium italic text-xl mb-4">
-          FAQ's
+          FAQ
         </p>
         <h2 className="text-4xl md:text-6xl font-bold text-zinc-900 leading-tight">
-          Frequently Asked Questions
+          Questions Fréquemment Posées
         </h2>
       </div>
       <div className="space-y-0">

@@ -6,22 +6,22 @@ export function LocationsAccordion() {
   const [active, setActive] = useState(0);
   const locations = useRef([
     {
-      city: "Los Angeles, CA",
-      desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit tortor eu dolorol egestas morbi vulputate etiam facilisis pellentesque ut quis.",
-      email: "losangeles@worship.com",
-      phone: "(310) 747-1374",
+      city: "Lomé, Maritime",
+      desc: "Notre église principale située au cœur de la capitale, accueillant une communauté diversifiée pour le culte et l'entraide.",
+      email: "lome@emtogo.org",
+      phone: "+228 22 20 00 00",
     },
     {
-      city: "Chicago, IL",
-      desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit tortor eu dolorol egestas morbi vulputate etiam facilisis pellentesque ut quis.",
-      email: "chicago@worship.com",
-      phone: "(312) 555-1234",
+      city: "Atakpamé, Plateaux",
+      desc: "Un centre spirituel dynamique servant la région des Plateaux avec dévouement et amour chrétien.",
+      email: "atakpame@emtogo.org",
+      phone: "+228 22 30 00 00",
     },
     {
-      city: "San Francisco, CA",
-      desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit tortor eu dolorol egestas morbi vulputate etiam facilisis pellentesque ut quis.",
-      email: "sf@worship.com",
-      phone: "(415) 555-5678",
+      city: "Kara, Kara",
+      desc: "Une communauté engagée dans la croissance spirituelle et le soutien social dans le nord du pays.",
+      email: "kara@emtogo.org",
+      phone: "+228 22 40 00 00",
     },
   ]);
 
@@ -31,15 +31,15 @@ export function LocationsAccordion() {
         <div>
           <div className="text-left mb-16">
             <p className="text-accent-gold font-medium italic text-xl mb-4">
-              Our locations
+              Nos localisations
             </p>
             <h2 className="text-4xl md:text-6xl font-bold mb-8">
-              Come visit us !
+              Venez nous rendre visite !
             </h2>
             <p className="text-zinc-400 text-lg leading-relaxed">
-              Lorem ipsum dolor sit amet consectetur adipiscing elit tortor eu
-              dolorol egestas morbi sem vulputate etiam facilisis pellentesque
-              ut quis.
+              Nous sommes présents dans plusieurs régions du Togo pour vous accueillir 
+              et partager ensemble la joie de l'Évangile. Nos portes sont toujours 
+              ouvertes pour tous.
             </p>
           </div>
           <div className="space-y-4">
@@ -64,7 +64,7 @@ export function LocationsAccordion() {
                       </div>
                       <div>
                         <p className="text-zinc-500 text-xs uppercase font-bold">
-                          Send us an email
+                          Envoyez-nous un email
                         </p>
                         <p className="font-bold">{loc.email}</p>
                       </div>
@@ -75,7 +75,7 @@ export function LocationsAccordion() {
                       </div>
                       <div>
                         <p className="text-zinc-500 text-xs uppercase font-bold">
-                          Give us a call
+                          Appelez-nous
                         </p>
                         <p className="font-bold">{loc.phone}</p>
                       </div>
@@ -89,7 +89,7 @@ export function LocationsAccordion() {
         <div className="relative h-[600px] rounded-[3rem] overflow-hidden">
           <img
             src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?auto=format&fit=crop&q=80&w=1200"
-            alt="Cityscape"
+            alt="Paysage Togo"
             className="w-full h-full object-cover grayscale"
           />
         </div>

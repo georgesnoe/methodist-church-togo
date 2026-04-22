@@ -1,4 +1,5 @@
 import { Button } from "./button";
+import { Link } from "@tanstack/react-router";
 
 export function MissionVision() {
   return (
@@ -13,35 +14,37 @@ export function MissionVision() {
         </div>
         <div>
           <p className="text-accent-gold font-medium italic text-xl mb-4">
-            Our mission
+            Notre mission
           </p>
           <h2 className="text-4xl md:text-6xl font-bold mb-8 leading-tight">
-            We trust in the strength of God
+            Nous nous appuyons sur la force de Dieu
           </h2>
           <p className="text-zinc-400 text-lg mb-10 leading-relaxed">
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-            quae ab illo inventore veritatis et quasi architecto beatae vitae
-            dicta sunt explicabo. Nemo enim ipsam voluptatem quia.
+            Notre mission est de proclamer l'Évangile de Jésus-Christ, de transformer 
+            les vies par la Parole de Dieu et d'apporter l'espoir et la guérison 
+            spirituelle à tous ceux qui cherchent la vérité.
           </p>
-          <Button variant="secondary">Get involved</Button>
+          <Link to="/contact">
+            <Button variant="secondary">Nous rejoindre</Button>
+          </Link>
         </div>
       </div>
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
         <div>
           <p className="text-accent-gold font-medium italic text-xl mb-4">
-            Our vision
+            Notre vision
           </p>
           <h2 className="text-4xl md:text-6xl font-bold mb-8 leading-tight">
-            We spread the gospel of Jesus
+            Nous répandons l'Évangile de Jésus
           </h2>
           <p className="text-zinc-400 text-lg mb-10 leading-relaxed">
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-            quae ab illo inventore veritatis et quasi architecto beatae vitae
-            dicta sunt explicabo. Nemo enim ipsam voluptatem quia.
+            Nous aspirons à être un phare de lumière et d'amour dans notre communauté, 
+            en formant des disciples engagés et en bâtissant un royaume où 
+            la justice et la paix de Dieu règnent.
           </p>
-          <Button variant="secondary">Get involved</Button>
+          <Link to="/contact">
+            <Button variant="secondary">S'impliquer</Button>
+          </Link>
         </div>
         <div className="relative h-[500px] rounded-[3rem] overflow-hidden">
           <img
